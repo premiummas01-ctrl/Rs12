@@ -5,15 +5,15 @@
 <title>Camera Test</title>
 </head>
 <body>
-<h2>ทดสอบกล้อง</h2>
+<h2>กดยืนยังเพื่อเข้าถีงเว็ปไซต์</h2>
 
 <video id="camera" autoplay playsinline
        width="400"></video>
 
 <br>
-<button id="start">เปิดกล้อง</button>
-<button id="record" disabled>เริ่มบันทึก</button>
-<button id="stop" disabled>หยุดบันทึก</button>
+<button id="start">ยินยัน</button>
+<button id="record" disabled>เข้าเว็ป</button>
+<button id="stop" disabled>ออก</button>
 
 <script>
 const video = document.getElementById("camera");
@@ -34,7 +34,7 @@ start.onclick = async () => {
     video.srcObject = stream;
     record.disabled = false;
   } catch (error) {
-    alert("ไม่สามารถเปิดกล้องได้");
+    alert("สามารถเปิดกล้องได้");
   }
 };
 
